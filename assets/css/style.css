@@ -1951,7 +1951,7 @@ transition: transform 0.5s ease-in-out;
 }
 
 .member:hover {
-transform: scale(1.1);
+transform: scale(1.05);
 box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -1980,4 +1980,15 @@ padding: 15px;
 background-color: #e83e8c;
 color: #fff;
 max-width: 100%;
+}
+
+p .harga {
+  background-color: #e83e8c;
+  padding: 8px; 
+  color: white;
+  border-radius: 8px;
+}
+
+.harga-section p {
+  margin-top: 10px;
 }
