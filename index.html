@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="/img/Logo/Logo-IPB.png">
+    
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -22,91 +25,17 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Ini untuk button pink yaw -->
-  <style>
-    #hero img {
-      width: 30px; 
-      height: auto; 
-      margin-top: 300px;
-      margin-bottom: 30px;
-    }
-
-    .image-about {
-      margin-left: -120px;
-      width: 600px;
-    }
-
-    .section-content {
-      margin-top: 30px;
-    }
-
-    .content-about {
-      margin-top: 0 !important;
-    }
-
-@media (max-width: 1000px) {
-    .image-about {
-      margin-left: -120px;
-      width: 450px;
-      height: 900px;
-    }
-
-    .section-content {
-      margin-top: 30px;
-    }
-}
-
-@media (max-width: 756px) {
-    .image-about {
-      margin-left: 0px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .section-content {
-      margin-top: 30px;
-    }
-}
-
-
-
-    .btn-outline-pink {
-        color: #e83e8c;
-        border-color: #e83e8c;
-    }
-    .btn-outline-pink:hover {
-        color: #fff;
-        background-color: #e83e8c;
-        border-color: #e83e8c;
-    }
-
-    .social-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-.member-img img {
-    height: 330px; /* sesuaikan dengan tinggi yang diinginkan */
-}
-
-.team .col-lg-3 {
-    text-align: center;
-}
-
-
-
-</style>
-
-
 </head>
 
-<body>
 
+
+<body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -116,21 +45,19 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
           <li><a class="nav-link scrollto" href="jadwal.html">Jadwal</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
-          <li><a class="nav-link scrollto " href="#event">Event</a></li>
-          <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Galeri</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
       <a href="index.html" class="logo"><img src="assets/img/logosv.png" alt="" height="300"></a>
       
-      <button type="button" class="btn btn-outline-pink"><a target="_blank"  href="HTML/login/index.html">Reservasi</a></button>
+      <a target="_blank"  href="/passenger.html"><button type="button" class="btn btn-outline-pink text-white">Reservasi</button></a>
 
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -138,7 +65,21 @@
       <img src="assets/img/panah.png" alt="Panah">
       <h1>THE <span>GYMNASIUM</span></h1>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
+
+  <div id="second-nav" class="fixed container fixed d-flex align-items-center" style="z-index: 99; position: relative;">
+    <div id="navbar-sec" class="navbar-sec fixed mx-auto">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+          <li><a class="nav-link scrollto " href="#event">Event</a></li>
+          <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Galeri</a></li>
+        </ul>
+      </div> 
+  </div>
+
+
 
   <main id="main">
 
@@ -151,10 +92,10 @@
         </div>
 
         <div class="row section-content">
-          <div class="col-md-7" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/gedung-gymnasium2.jpg" class="image-about" alt="">
           </div>
-          <div class="col-md-5 pt-4 pt-lg-0 content d-flex flex-column content-about" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 pt-4 pt-lg-0 content d-flex flex-column content-about" data-aos="fade-up" data-aos-delay="100">
             <h3>Gymnasium</h3>
             <p class="fst-italic">
               Pada Rabu, 25/10/2023,
@@ -169,7 +110,8 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
 
 
     <!-- ======= Event Section ======= -->
@@ -185,7 +127,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/event-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/event-1.jpg" class="img-fluid img-event" alt="">
               </div>
               <div class="member-info">
                 <h4>Lomba Nasional</h4>
@@ -196,7 +138,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/event-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/event-2.jpg" class="img-fluid img-event" alt="">
               </div>
               <div class="member-info">
                 <h4>Lomba Futsal</h4>
@@ -207,7 +149,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/event-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/event-3.jpg" class="img-fluid img-event" alt="">
               </div>
               <div class="member-info">
                 <h4>Lomba Tenis Meja</h4>
@@ -218,10 +160,10 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/event-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/event-2.jpg" class="img-fluid img-event" alt="">
               </div>
               <div class="member-info">
-                <h4>Lomba Basket</h4>
+                <h4>Lomba bulutangkis</h4>
               </div>
             </div>
           </div>
@@ -229,7 +171,8 @@
         </div>
 
       </div>
-    </section><!-- End Event Section -->
+    </section>
+    <!-- End Event Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -274,14 +217,15 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
+      <div class="container bg-portfolio" data-aos="fade-up">
 
         <div class="section-title">
-          <h3 style="color: #fff;">Galeri</h3>
+          <h3>Galeri</h3>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -333,7 +277,8 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -408,6 +353,19 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    window.addEventListener('scroll', function() {
+      var stickyDiv = document.getElementById('sticky-div');
+      var headerHeight = document.getElementById('header').offsetHeight;
+      var stickyDivTop = stickyDiv.offsetTop;
+  
+      if (window.scrollY > (stickyDivTop - headerHeight)) {
+        stickyDiv.classList.add('fixed');
+      } else {
+        stickyDiv.classList.remove('fixed');
+      }
+    });
+  </script>
 </body>
 
 </html>

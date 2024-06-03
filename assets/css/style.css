@@ -183,7 +183,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 90px;
 }
 
 .scrolled-offset {
@@ -327,7 +327,6 @@ h6 {
     left: -100%;
   }
 }
-
 /**
 * Mobile Navigation 
 */
@@ -445,6 +444,67 @@ h6 {
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
+}
+
+
+/* 
+# Second Nav
+*/
+.navbar-sec ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-sec li {
+  position: relative;
+}
+
+#second-nav .navbar-sec>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 50px;
+}
+
+#second-nav .navba-sec a,
+#second-nav .navbar-sec a:focus {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+
+#second-nav .navbar-sec a i,
+#second-nav .navbar-sec a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+#second-nav .navbar-sec a:hover,
+#second-nav .navbar-sec .active,
+#second-nav .navbar-sec .active:focus,
+#second-nav .navbar-sec li:hover>a {
+  color: #222222;
+}
+
+#second-nav .navbar-sec .dropdown ul a {
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+#second-nav.navbar-sec .dropdown ul a:hover,
+#second-nav .navbar-sec .dropdown ul .active:hover,
+#second-nav .navbar-sec .dropdown ul li:hover>a {
+  color: #222222;
 }
 
 /*--------------------------------------------------------------
@@ -1070,7 +1130,9 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background-color: #e83e8c;
+  background-image: url(../img/Vector1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio #portfolio-flters {
@@ -1804,4 +1866,118 @@ section {
     text-align: center;
     padding: 2px 0;
   }
+}
+
+#hero img {
+  width: 30px; 
+  height: auto; 
+  margin-top: 300px;
+  margin-bottom: 30px;
+}
+
+.image-about {
+  margin-left: -120px;
+  width: 700px;
+}
+
+.section-content {
+  margin-top: 30px;
+}
+
+.content-about {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1400px) {
+.image-about {
+  margin-left: -120px;
+  width: 580px;
+  height: 900px;
+  }
+}
+
+@media (max-width: 1000px) {
+.image-about {
+  margin-left: -120px;
+  width: 450px;
+  height: 900px;
+}
+
+.section-content {
+  margin-top: 30px;
+}
+}
+
+@media (max-width: 756px) {
+.image-about {
+  margin-left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-content {
+  margin-top: 30px;
+}
+
+.member {
+  width: 100%;
+}
+
+.member-img {
+  object-fit: cover;
+  height: auto;
+}
+}
+
+.btn-outline-pink {
+color: #e83e8c !important;
+border-color: #e83e8c;
+}
+
+.btn-outline-pink:hover {
+    color: white !important;
+    background-color: #e83e8c;
+    border-color: #e83e8c;
+}
+
+.social-icon {
+width: 24px;
+height: 24px;
+margin-right: 10px;
+}
+
+.member {
+transition: transform 0.5s ease-in-out;
+}
+
+.member:hover {
+transform: scale(1.1);
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.member-img img {
+height: 330px; /* sesuaikan dengan tinggi yang diinginkan */
+}
+
+.portfolio-item img {
+transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-item img:hover {
+transform: scale(1.05);
+}
+
+.team .col-lg-3 {
+text-align: center;
+}
+
+#header .logo img {
+max-height: 120px;
+}
+
+#second-nav {
+padding: 15px;
+background-color: #e83e8c;
+color: #fff;
+max-width: 100%;
 }
