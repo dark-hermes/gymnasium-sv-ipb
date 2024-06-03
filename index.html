@@ -28,6 +28,52 @@
 
   <!-- Ini untuk button pink yaw -->
   <style>
+    #hero img {
+      width: 30px; 
+      height: auto; 
+      margin-top: 300px;
+      margin-bottom: 30px;
+    }
+
+    .image-about {
+      margin-left: -120px;
+      width: 600px;
+    }
+
+    .section-content {
+      margin-top: 30px;
+    }
+
+    .content-about {
+      margin-top: 0 !important;
+    }
+
+@media (max-width: 1000px) {
+    .image-about {
+      margin-left: -120px;
+      width: 450px;
+      height: 900px;
+    }
+
+    .section-content {
+      margin-top: 30px;
+    }
+}
+
+@media (max-width: 756px) {
+    .image-about {
+      margin-left: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .section-content {
+      margin-top: 30px;
+    }
+}
+
+
+
     .btn-outline-pink {
         color: #e83e8c;
         border-color: #e83e8c;
@@ -88,8 +134,8 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <img src="assets/img/panah.png" alt="Panah" style="width: 30px; height: auto;">
+    <div class="hero container" data-aos="zoom-out" data-aos-delay="100">
+      <img src="assets/img/panah.png" alt="Panah">
       <h1>THE <span>GYMNASIUM</span></h1>
     </div>
   </section><!-- End Hero -->
@@ -104,11 +150,11 @@
           <h3>Welcome To <span>Gymnasium</span></h3>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/gedung-gymnasium2.jpg" class="img-fluid" alt="">
+        <div class="row section-content">
+          <div class="col-md-7" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/gedung-gymnasium2.jpg" class="image-about" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-5 pt-4 pt-lg-0 content d-flex flex-column content-about" data-aos="fade-up" data-aos-delay="100">
             <h3>Gymnasium</h3>
             <p class="fst-italic">
               Pada Rabu, 25/10/2023,

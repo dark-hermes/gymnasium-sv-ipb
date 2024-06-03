@@ -1,0 +1,202 @@
+@font-face{
+    font-family: 'apex-book';
+    src: url('../apex-new/ufonts.com_apexnew-book-opentype.otf') format(opentype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'apex-bold';
+    src: url('../apex-new/ufonts.com_apexnew-bold-opentype.otf') format(opentype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family:'apex-book', sans-serif !important;
+}
+
+body a{
+    text-decoration: none;
+}
+
+#login {
+    margin: auto !important;
+    color: #EC008C;
+    
+}
+
+#login .container-lg {
+    background: rgba(194, 194, 194, 0.25);
+}
+
+.custom-rounded{
+    border-radius: 20px !important;
+}
+
+.custom-rounded-start-2{
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.image-section {
+    padding-left: 0 !important;
+}
+
+.image-login {
+    width: 100% !important;
+}
+
+.input-section h2 {
+    padding-bottom: 20px !important;
+    font-family: 'apex-bold', sans-serif !important;
+    margin: auto 0 !important;
+}
+
+.form {
+    margin-left: 10px;
+}
+
+.form .email,
+.form .password,
+.form .name,
+.form .newPassword,
+.form .confirmPassword {
+    border-color: #EC008C;
+    border-width: 3px;
+    width: 95%;
+    margin-top: 40px;
+    color: #EC008C;
+}
+
+.form .password{
+    margin-bottom: 20px;
+}
+
+.form .email::placeholder,
+.form .password::placeholder,
+.form .name::placeholder,
+.form .newPassword::placeholder,
+.form .confirmPassword::placeholder  {
+    color: #EC008C;
+}
+
+.form p{
+    margin-bottom: 1px;
+}
+
+.btn-login {
+    margin-top: 20px;
+    padding: 10px 30px !important;
+    color: #EC008C !important;
+    border-color: #EC008C !important;
+    border-width: 2px !important;
+}
+
+.btn-login:hover {
+    color: #ffffff !important;
+    border-color: #EC008C !important;
+    background-color: #EC008C !important;
+}
+
+
+@media (max-width: 1200px) {
+    .form .email,
+    .form .password,
+    .form .name,
+    .form .newPassword,
+    .form .confirmPassword  {
+        margin-top: 20px;
+    } 
+
+    .input-section h2 {
+        padding-top: 30px !important;
+        padding-bottom: 10px !important;
+        font-family: 'apex-bold', sans-serif !important;
+        margin: auto 0 !important;
+    }
+
+    .form p {
+        margin: 1px;
+    }
+   
+}
+
+@media (max-width: 991px) {
+    .form .email,
+    .form .password,
+    .form .name,
+    .form .newPassword,
+    .form .confirmPassword  {
+        margin-top: 20px;
+    } 
+
+    .form .password{
+        margin-bottom: 5px;
+    }
+
+    .btn-login {
+        margin-top: 5px;
+    }
+
+    .btn-login {
+        margin-bottom: 30px;
+        padding: 5px 15px !important;
+        color: #EC008C !important;
+        border-color: #EC008C !important;
+        border-width: 2px !important;
+    }
+
+    .image-login {
+        height: 100% !important;
+    }
+    
+   
+}
+
+@media (max-width: 768px) {
+    .custom-rounded-start-2{
+        border-radius: 20px !important;
+    }
+
+    #login .image-section {
+        padding-right: 0;
+    }
+
+    .input-section h2 {
+        padding-top: 50px !important;
+        padding-bottom: 10px !important;
+        font-family: 'apex-bold', sans-serif !important;
+        margin: auto 0 !important;
+    }
+    
+    .form .email,
+    .form .password,
+    .form .name,
+    .form .newPassword,
+    .form .confirmPassword  {
+        border-color: #EC008C;
+        border-width: 3px;
+        width: 95%;
+        margin-top: 30px;
+        color: #EC008C;
+    }
+    
+    .form .password{
+        margin-bottom: 20px;
+    }
+    
+    .form p{
+        margin-bottom: 1px;
+    }
+
+    .btn-login {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding: 10px 30px !important;
+        color: #EC008C !important;
+        border-color: #EC008C !important;
+        border-width: 2px !important;
+    }
+    
+}
